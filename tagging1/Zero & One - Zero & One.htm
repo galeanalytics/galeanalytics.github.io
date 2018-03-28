@@ -20,8 +20,23 @@
 			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-K8PFQFC');</script>
+		})(window.document,'script','dataLayer','GTM-K8PFQFC');</script>
 	<!-- End Google Tag Manager -->
+ <!--GTM Event-->
+ <script>
+(function clickEvents(){setInterval(function(){
+  try{document.body.removeEventListener("click", myInteractionFunc, false);}catch(err){};
+  document.body.addEventListener("click", myInteractionFunc, false);
+},250);
+var myInteractionFunc = function(e){
+  var h = document.location.href;
+  for (var target=e.target; target && target!=this; target=target.parentNode){
+    if(target.matches('a[href*="www.zeroandone.io/about"]')){
+      dataLayer.push({event:'ga_event',c:'Click',a:'Links',l:target.href});
+    };
+	}
+}
+</script>
 
 	<script>var et_site_url='https://www.zeroandone.io';var et_post_id='45';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
 </script><title>Zero &amp; One - Zero &amp; One</title>
@@ -112,7 +127,7 @@ f;f=d[e];e++)if(a.hasOwnProperty(f)&&"undefined"!=typeof a[f])try{var g=[];c[f]=
 				</div>
 				<div id="et-top-navigation" data-height="49" data-fixed-height="40" style="padding-left: 180px;">
 											<nav id="top-menu-nav">
-						<ul id="top-menu" class="nav"><li id="menu-item-524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-524"><a href="https://www.zeroandone.io/about/">ABOUT</a></li>
+						<ul id="top-menu" class="nav"><li id="menu-item-524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-524"><a href="https://www.zeroandone.io/about/ id="abcde">ABOUT</a></li>
 <li id="menu-item-1986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1986"><a href="https://www.zeroandone.io/our-customer-data-platform/">OUR CUSTOMER DATA PLATFORM</a></li>
 <li id="menu-item-2036" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2036"><a>SERVICES</a>
 <ul class="sub-menu">
@@ -124,9 +139,7 @@ f;f=d[e];e++)if(a.hasOwnProperty(f)&&"undefined"!=typeof a[f])try{var g=[];c[f]=
 <li id="menu-item-521" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a href="https://www.zeroandone.io/partners-login/">PARTNERS LOGIN</a></li>
 <li id="menu-item-522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href="https://www.zeroandone.io/careers/">CAREERS</a></li>
 <li id="menu-item-520" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-520"><a href="https://www.zeroandone.io/contact/">CONTACT</a></li>
-</ul>						</nav>
-
-
+</ul>						</na
 
 
 					<div id="et_mobile_nav_menu">
